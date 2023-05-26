@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MPESA UI</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="logo-container"></div>
+        <div id="sub-container">
+            <!--  setting new pin and confirmation-->
+            <div id="setPin_div">
+               <h3>Welcome to mpesa</h3> 
+               <form action="" method="">
+                <label style="margin: 5px" for="new_pin">Set New Pin: </label> 
+                <br> <br>
+                <input type="password" class="myInput" id="new_pin">
+                <br> <br>
+                <div id="form-btn">
+                    <button class="cancel_btn" type="reset">Cancel</button>
+                <button class="ok_btn">Ok</button>
+                </div>
+               </form>
+            </div>
+            <!-- displays the mpesa menu services in order -->
+            <div id="mpesa_menu">
+                <div id="mpesa_menu_div">
+                    <h2 class="menu-name">MPESA MENU</h2>
+                    <button class="menu_list">Send Money</button>
+                    <button class="menu_list">Withdraw Cash</button>
+                    <button class="menu_list">Buy Airtime</button>
+                    <button class="menu_list">Loans and Savings</button>
+                    <button class="menu_list">Lipa na M-PESA</button>
+                    <button class="menu_list">My Account</button>
+                </div>
+            </div>
+            <!-- displays empty buttons which chanhest the buttons names according to type of service. -->
+            <div id="empty_btns">
+                <div id="mpesa_menu_div">
+                    <button class="menu_list">From Agent</button>
+                    <button class="menu_list">From ATM</button>
+                    <button class="menu_list">Home</button>
+
+                   
+                </div>
+            </div>
+            <!-- displays all the transactions functions but according to the type of service -->
+            <div id="all_transaction">
+                <form style="margin-top: 60px;" action="" method="">
+                    <label style="margin: 5px" for="new_pin">Enter Phone Number. </label>
+                    <br> <br>
+                    <input type="password" class="myInput" id="new_pin">
+                    <br> <br>
+                    <div id="form-btn">
+                    <button class="cancel_btn" type="reset">Cancel</button>
+                    <button class="ok_btn">Ok</button>
+                    </div>
+                   </form>
+            </div>
+            <!-- last to be displayed for a succesiful transaction. generates the transaction message for each transaction -->
+            <div id="feedback">
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit commodi dolore, odit, fugiat debitis porro expedita eveniet fugit sint corporis ratione officia. Quas laboriosam iste qui. Adipisci, nobis laborum.</h5>
+                <button class="menu_list">Home</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
