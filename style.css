@@ -4,6 +4,11 @@
     --passwords-color: rgb(16, 205, 16);
     --div_debug-color: #009dff;
   }
+  
+
+  *{
+    font-family: sans-serif;
+  }
 @media screen and (min-width: 1045) and (min-width: 1962) {
     #main-container{
     background-color:var(--primary-color);
@@ -47,15 +52,27 @@
     height: 100%;
     margin-top: -8%;
 }
-/* div for setting new pin and confirmation  */
+/* div for setting new pin   */
 #setPin_div{
-    /* display: none; */
+    display: none;
     z-index: 0;
     padding-top: 20%;
     width:  100%;
     height: 50dvh;    
 }
 #setPin_div h3{
+    padding-left: 19%;
+    color: var(--secondary-color);
+}
+/* div for confirming new pin ....... confirmation  */
+#setPin_div_confirm{
+    display: none;
+    z-index: 0;
+    padding-top: 20%;
+    width:  100%;
+    height: 50dvh;    
+}
+#setPin_div_confirm h3{
     padding-left: 19%;
     color: var(--secondary-color);
 }
@@ -146,3 +163,8 @@ input{
 #feedback h5{
     font-size: 16px;
 }
+/* *****************************button dissable ****************************  */
+.ok_btn.disabled {
+    background-color: grey;
+    color: white;
+  }
